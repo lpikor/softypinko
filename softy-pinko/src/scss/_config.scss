@@ -1,0 +1,12 @@
+$colors: (
+    primary: #8261ee,
+    secondary: #ff589e,
+    white: #ffffff,
+    light-grey: #f2f2fe,
+);
+
+$text-colors: (
+    white: map-get($map: $colors, $key: white),
+    grey: #777777,
+    black: #2e2e2e
+)
