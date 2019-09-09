@@ -1,0 +1,27 @@
+.wrapper {
+    padding: 0 15px;
+}
+
+.features {
+    &__item {
+        padding: 30px;
+    }
+}
+
+.work-process {
+    &__item {
+        padding: 20px;
+    }
+}
+
+.testimonials {
+    &__item {
+        padding: 25px;
+    }
+}
+
+.pricing {
+    &__package {
+        padding: 29px;
+    }
+}
