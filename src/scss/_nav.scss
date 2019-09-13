@@ -25,6 +25,7 @@
         left: 0;
         top: 50%;
         transform: translateY(-50%);
+        transition: background-color $hamburger-animation-time;
 
         &::before,
         &::after {
@@ -33,6 +34,7 @@
             content: '';
             width: 75%;
             left: 0;
+            transition: transform $hamburger-animation-time, width $hamburger-animation-time;
         }
 
         &::before {
@@ -41,5 +43,19 @@
         &::after {
             top: 10px;
         }
+    }
+
+    &--active &__inner {
+        background-color: transparent;
+    }
+
+    &--active &__inner::before {
+        width: 100%;
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    &--active &__inner::after {
+        width: 100%;
+        transform: translateY(-10px) rotate(-45deg);
     }
 }
