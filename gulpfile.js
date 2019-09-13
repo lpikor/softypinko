@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
-const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
+const terser = require('gulp-terser');
 const sass = require('gulp-sass');
 const del = require('del');
 
@@ -30,7 +30,8 @@ function js() {
     return gulp
         .src('./src/js/*.js')
         .pipe(concat('main.js'))
-        .pipe(uglify())
+        .pipe(terser())
+        // .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'));
 }
 
