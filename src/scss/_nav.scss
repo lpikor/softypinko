@@ -7,7 +7,7 @@
 
     &__box {
         height: 30px;
-        width: 40px;
+        width: 32px;
         display: inline-block;
         position: relative;
     }
@@ -31,6 +31,7 @@
             @include hamburger-line();
 
             content: '';
+            width: 75%;
             left: 0;
         }
 
