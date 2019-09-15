@@ -8,6 +8,18 @@
     box-sizing: border-box;
 }
 
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
 .attestant__photo {
+    display: none;
+}
+
+.img-hide {
     display: none;
 }
