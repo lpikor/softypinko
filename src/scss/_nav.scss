@@ -86,6 +86,7 @@
 }
 
 .navigation {
+    display: none;
     width: 100%;
 
     &__list {
@@ -107,5 +108,5 @@
 }
 
 .navigation--active {
-    
+
 }
