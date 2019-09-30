@@ -16,6 +16,27 @@ $text-colors: (
 $hamburger-animation-time: .5s;
 $gradient-background: linear-gradient(map-get($colors, gradient-left), map-get($colors, gradient-right));
 
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
 .btn {
-    
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: map-get($colors, white);
+    padding: 12px 20px;
+    border-radius: 20px;
+
+    &--primary {
+        background-color: map-get($colors, secondary);
+    }
+
+    &--secondary {
+        background-color: map-get($colors, primary);
+    }
 }
