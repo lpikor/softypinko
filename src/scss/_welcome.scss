@@ -1,0 +1,34 @@
+.welcome {
+    color: white;
+    background: url("../images/welcome_image.jpg") no-repeat center center;
+    height: 100vh;
+
+    &__container {
+        background: $gradient-background;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        letter-spacing: 0.07em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: normal;
+    }
+
+    &__subtitle {
+        margin-top: 30px;
+        font-size: 0.9em;
+        line-height: 1.6em;
+        text-align: center;
+    }
+
+    &__strong {
+        font-weight: bolder;
+    }
+}
