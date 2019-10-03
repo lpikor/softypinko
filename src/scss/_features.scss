@@ -10,7 +10,7 @@
         letter-spacing: 0.03em;
         border-radius: 10%;
         box-shadow: 0 2px 48px 0 rgba(0,0,0,0.1);;
-        &::first-child {
+        &:first-child {
             margin-top: 0;
         }
     }
