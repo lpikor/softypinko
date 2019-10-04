@@ -6,6 +6,10 @@
     &__icon {
         font-size: 220px;
         &-container {
+            background: $gradient-background;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
             margin: auto;
             display: flex;
             align-items: center;
