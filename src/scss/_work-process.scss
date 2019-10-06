@@ -1,0 +1,29 @@
+.work-process {
+    color: white;
+    background: url("../images/work-process_image.jpg") center;
+
+    &__container {
+        background: $gradient-background;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 110px;
+        padding-bottom: 80px;
+    }
+
+    &__title {
+        font-size: 28px;
+        letter-spacing: 0.06em;
+    }
+
+    &__description {
+        margin-top: 30px;
+        font-size: 15px;
+        line-height: 1.6em;
+    }
+
+    &__items {
+        margin-top: 40px;
+    }
+}
