@@ -19,4 +19,86 @@
         letter-spacing: 1px;
         line-height: 28px;
     }
+
+    &__package {       
+        box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .1);
+        background: #fff;
+        margin-top: 50px;
+        border-radius: 20px;
+        padding: 30px;
+    }
+}
+
+.package {
+    &__container {
+        margin-top: 65px;
+    }
+
+    &__title {
+        font-size: 17px;
+    }
+
+    &__payment {
+        border-radius: 20px;
+        width: 100%;
+        display: inline-block;
+        margin-top: 30px;
+        color: white;
+        background: map-get($map: $colors, $key: primary);
+        padding: 20px;
+    }
+
+    &__features {
+        margin-top: 40px;
+        &__item {
+            font-size: 13px;
+            margin-top: 12px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:nth-last-child(-n+3) {
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        margin-top: 50px;
+    }
+
+    &--premium {
+        & > .package__payment {
+            background: map-get($map: $colors, $key: secondary);
+        }
+
+        & .package__features__item:nth-last-child(3) {
+            text-decoration: none;
+        }
+    }
+
+    &--advanced {
+        & .package__features__item {
+            text-decoration: none;
+        }
+    }
+}
+
+.payment {
+    &__currency {
+        font-size: 32px;
+    }
+
+    &__value {
+        font-size: 28px;
+    }
+
+    &__frequency {
+        display: block;
+        margin-top: 7px;
+        font-size: 14px;
+        letter-spacing: 0.88px;
+    }
 }
