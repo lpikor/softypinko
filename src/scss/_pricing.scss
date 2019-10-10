@@ -1,0 +1,22 @@
+.pricing {
+    background-color: #f2f2fe;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 15px 80px;
+    }
+
+    &__title {
+        font-size: 28px;
+        letter-spacing: 1.75px;
+        line-height: 38px;
+    }
+
+    &__description {
+        margin-top: 20px;
+        letter-spacing: 1px;
+        line-height: 28px;
+    }
+}
