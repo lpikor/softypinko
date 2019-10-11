@@ -1,5 +1,5 @@
 .blog {
-    background-color: #eee;
+    background-color: #fff;
     &__container {
         display: flex;
         flex-direction: column;
@@ -20,10 +20,37 @@
     }
 
     &__entries {
-        margin-top: 45px;
+        margin-top: 35px;
     }
 
     &__entry {
-        margin-top: 20px;
+        margin-top: 30px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.entry {
+    &__photo {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    &__title {
+        margin-top: 30px;
+    }
+
+    &__description {
+        font-size: 13px;
+        color: #777;
+        margin-top: 30px;
+        line-height: 26px;
+    }
+
+    &__button {
+        margin-top: 30px;
+        display: inline-block;
     }
 }
