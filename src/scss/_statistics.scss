@@ -1,0 +1,32 @@
+.statistics {
+    color: white;
+    background: url("../images/statistics_image.jpg") center;
+
+    &__container {
+        background: $gradient-background;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 90px 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__number {
+        font-size: 36px;
+    }
+
+    &__description {
+        margin-top: 10px;
+        font-size: 17px;
+    }
+}
