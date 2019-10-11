@@ -8,6 +8,7 @@
 @import 'testimonials';
 @import 'pricing';
 @import 'statistics';
+@import 'blog';
 
 * {
     padding: 0;
@@ -17,8 +18,4 @@
 
 body {
     font-family: 'Raleway', 'sans-serif';
-}
-
-.img-hide {
-    display: none;
 }
