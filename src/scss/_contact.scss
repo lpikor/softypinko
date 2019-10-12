@@ -6,7 +6,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 160px 15px;
+        padding: 160px 20px;
     }
 
     &__title {
@@ -23,5 +23,39 @@
 
     &__form {
         margin-top: 30px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.form {
+    * {
+        margin-top: 25px;
+        border-radius: 30px;
+        outline: none;
+        border: none;
+    }
+
+    &__inputs {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        * {
+            // padding: 15px 0;
+            padding: 16px 25px;
+            // width: 100%;
+            font-family: inherit;
+            font-size: 14px;
+            color: #212529;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__submit {
+        font-size: 13px;
     }
 }
