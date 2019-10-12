@@ -1,0 +1,1 @@
+const hamburger=document.querySelector(".hamburger"),navigation=document.querySelector(".navigation"),handleClick=()=>{hamburger.classList.toggle("hamburger--active"),navigation.classList.toggle("navigation--active")};hamburger.addEventListener("click",handleClick),$(document).ready((function(){$(".hamburger").on("click",(function(){$(".navigation").slideToggle(185)}))}));
