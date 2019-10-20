@@ -5,29 +5,34 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+
         padding: 100px 15px 80px;
     }
 
     &__title {
         color: #1e1e1e;
+
+        line-height: 38px;
         font-size: 28px;
         letter-spacing: 1.75px;
-        line-height: 38px;
     }
 
     &__description {
         margin-top: 20px;
-        letter-spacing: 1px;
-        line-height: 28px;
+
         color: #777777;
+
+        line-height: 28px;
+        letter-spacing: 1px;
     }
 
-    &__package {       
-        box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .1);
-        background: #fff;
-        margin-top: 50px;
-        border-radius: 20px;
+    &__package {    
         padding: 30px;
+        margin-top: 50px;
+
+        background: #fff;   
+        border-radius: 20px;
+        box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .1);
     }
 }
 
@@ -38,25 +43,31 @@
 
     &__title {
         color: #1e1e1e;
+
         font-size: 17px;
     }
 
     &__payment {
-        border-radius: 20px;
-        width: 100%;
         display: inline-block;
-        margin-top: 30px;
-        color: white;
-        background: map-get($map: $colors, $key: primary);
+
         padding: 20px;
+        margin-top: 30px;
+        width: 100%;
+
+        background: map-get($map: $colors, $key: primary);
+        color: white;
+        border-radius: 20px;
     }
 
     &__features {
         margin-top: 40px;
+
         &__item {
-            font-size: 13px;
             margin-top: 12px;
+
             color: #7a7a7a;
+
+            font-size: 13px;
 
             &:first-child {
                 margin-top: 0;
@@ -70,6 +81,7 @@
 
     &__button {
         display: inline-block;
+
         margin-top: 50px;
     }
 
@@ -101,7 +113,9 @@
 
     &__frequency {
         display: block;
+
         margin-top: 7px;
+        
         font-size: 14px;
         letter-spacing: 0.88px;
     }

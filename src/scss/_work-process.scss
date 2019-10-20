@@ -1,15 +1,18 @@
 .work-process {
-    color: white;
     background: url("../images/work-process_image.jpg") center;
+    color: white;
 
     &__container {
-        background: $gradient-background;
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+
         padding-top: 110px;
         padding-bottom: 110px;
+
+        background: $gradient-background;
+
+        text-align: center;
     }
 
     &__title {
@@ -19,50 +22,60 @@
 
     &__description {
         margin-top: 30px;
-        font-size: 15px;
+
         line-height: 1.6em;
+        font-size: 15px;
     }
 
     &__items {
-        margin-top: 40px;
         display: grid;
         grid-template-columns: 45% 45%;
         grid-gap: 30px;
+        
+        margin-top: 40px;
     }
 
     &__item {
-        background: map-get($colors, white);
         display: flex;
         flex-direction: column;
-        border-radius: 20px;
+
+        background: map-get($colors, white);
         box-shadow: 10px 10px 0 rgba(175, 146, 226, 0.58);
+        border-radius: 20px;
 
         &-title {
-            font-size: 17px;
             margin-top: 20px;
+            
             color: map-get($text-colors, black);
+            
+            font-size: 17px;
         }
         &-description {
-            font-size: 14px;
             margin-top: 5px;
-            line-height: 1.5em;
+            
             color: map-get($text-colors, grey);
+
+            line-height: 1.5em;
+            font-size: 14px;
         }
     }
 
     &__icon {
         font-size: 24px;
+
         &-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin: auto;
+            height: 32px;
+            width: 32px;
+            
             background: $gradient-background;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 32px;
-            height: 32px;
         }
     }
 }

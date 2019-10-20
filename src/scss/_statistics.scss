@@ -3,17 +3,20 @@
     background: url("../images/statistics_image.jpg") center;
 
     &__container {
-        background: $gradient-background;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         padding: 90px 0;
+
+        background: $gradient-background;
     }
 
     &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         margin-top: 40px;
 
         &:first-child {
@@ -27,6 +30,7 @@
 
     &__description {
         margin-top: 10px;
+        
         font-size: 17px;
     }
 }

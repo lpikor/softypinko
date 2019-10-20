@@ -21,3 +21,34 @@
 body {
     font-family: 'Raleway', 'sans-serif';
 }
+
+.btn {
+    padding: 12px 20px;
+
+    color: map-get($colors, white);
+    border-radius: 20px;    
+    
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &--primary {
+        background-color: map-get($colors, secondary);
+    }
+
+    &--secondary {
+        background-color: map-get($colors, primary);
+    }
+}
+
+.divider {
+    border: .5px solid map-get($map: $colors, $key: light-grey);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+}
