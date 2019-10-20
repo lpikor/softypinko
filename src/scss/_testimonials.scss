@@ -2,27 +2,32 @@
     &__container {
         display: flex;
         flex-direction: column;
-        text-align: center;
+
         margin: 110px 0;
+
+        text-align: center;
     }
 
     &__title {
-        font-weight: 500;
         font-size: 28px;
+        font-weight: 500;
         letter-spacing: 1.75px;
     }
 
     &__description {
-        color: map-get($map: $text-colors, $key: grey);
-        line-height: 28px;
         margin-top: 20px;
+
+        color: map-get($map: $text-colors, $key: grey);
+
+        line-height: 28px;
     }
 
     &__items {
-        margin-top: 40px;
         display: grid;
         grid-template-columns: 100%;
         grid-gap: 30px;
+
+        margin-top: 40px;
     }
 
     &__item {
@@ -32,48 +37,56 @@
 
     &__icon {
         font-size: 24px;
+
         &-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin: auto;
+            height: 32px;
+            width: 32px;
+
             background: $gradient-background;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 32px;
-            height: 32px;
         }
     }
 
     &__content {
         margin-top: 20px;
+
         color: map-get($map: $text-colors, $key: grey);
-        font-size: 15px;
+
         line-height: 26px;
+        font-size: 15px;
         text-align: left;
     }
 
     &__attestant {
-        margin-top: 20px;
         display: flex;
+
+        margin-top: 20px;
     }
 }
 
 .attestant {
     &__photo {
-        width: 60px;
         height: 60px;
+        width: 60px;
+
         border-radius: 50%;
     }
 
     &__details {
-        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+
         margin-left: 20px;
+        width: 100%;
     }
 
     &__name {
@@ -82,8 +95,10 @@
     }
 
     &__title {
-        font-size: 15px;
         margin-top: 5px;
+
         color: map-get($map: $colors, $key: secondary);
+        
+        font-size: 15px;
     }
 }

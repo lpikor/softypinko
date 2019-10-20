@@ -29,12 +29,14 @@ $gradient-background: linear-gradient(135deg, map-get($colors, gradient-left), m
 }
 
 .btn {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: map-get($colors, white);
     padding: 12px 20px;
-    border-radius: 20px;
+
+    color: map-get($colors, white);
+    border-radius: 20px;    
+    
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
 
     &--primary {
         background-color: map-get($colors, secondary);

@@ -1,31 +1,37 @@
 .welcome {
-    color: white;
-    background: url("../images/welcome_image.jpg") center;
     height: 100vh;
 
+    background: url("../images/welcome_image.jpg") center;
+
+    color: white;
+
     &__container {
-        background: $gradient-background;
-        width: 100%;
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        width: 100%;
+        height: 100%;
+
+        background: $gradient-background;
     }
 
     &__title {
-        letter-spacing: 0.06em;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         font-weight: normal;
+        letter-spacing: 0.06em;
     }
 
     &__subtitle {
         margin-top: 30px;
-        font-size: 0.9em;
-        line-height: 1.6em;
+
         text-align: center;
+        line-height: 1.6em;
+        font-size: 0.9em;
     }
 
     &__strong {
@@ -38,11 +44,14 @@
 
     &::after {
         content: '';
+        
         position: absolute;
-        left: 0;
         bottom: 0;
+        left: 0;
+
         height: 100px;
         width: 100%;
+
         background: url("../images/welcome_divider.svg") no-repeat center;
     }
 
