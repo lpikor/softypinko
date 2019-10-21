@@ -2,15 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     position: fixed;
     top: 30px;
     right: 15px;
     left: 15px;
     z-index: 1;
-
-    margin: auto;
-    max-width: 545px;
 
     background-color: white;
     border-radius: 40px;
@@ -140,11 +136,5 @@
         width: 100%;
 
         color: #3B566E;
-    }
-}
-
-@media (min-width: 768px) {
-    .nav {
-        max-width: 738px;
     }
 }
