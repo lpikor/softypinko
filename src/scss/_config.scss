@@ -13,5 +13,13 @@ $text-colors: (
     black: #2e2e2e
 );
 
+$spaces: (
+    xs: 7px,
+    s: 15px,
+    m: 25px,
+    l: 50px,
+    xl: 100px
+);
+
 $hamburger-animation-time: .5s;
 $gradient-background: linear-gradient(135deg, map-get($colors, gradient-left), map-get($colors, gradient-right));
