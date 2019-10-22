@@ -6,13 +6,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        padding-top: 110px;
-        padding-bottom: 110px;
+        text-align: center;
 
         background: $gradient-background;
-
-        text-align: center;
     }
 
     &__title {
