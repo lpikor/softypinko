@@ -1,5 +1,5 @@
 .container {
-  padding: 100px 0; }
+  padding: 100px 15px; }
 
 .features__item {
   padding: 30px; }
@@ -516,7 +516,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 15px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: white; }
   .footer__media {
     display: flex;
@@ -533,6 +534,8 @@
     font-size: 12px;
     letter-spacing: 0.88px;
     text-transform: uppercase; }
+  .footer__design {
+    display: block; }
 
 .media__icon {
   margin: 5px 15px;
