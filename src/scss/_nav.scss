@@ -4,8 +4,8 @@
     align-items: center;
     position: fixed;
     top: 30px;
-    right: 15px;
-    left: 15px;
+    right: map-get($map: $spaces, $key: s);
+    left: map-get($map: $spaces, $key: s);
     z-index: 1;
 
     text-align: center;
