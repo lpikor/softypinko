@@ -5,7 +5,8 @@
         flex-direction: column;
         align-items: center;
 
-        margin-top: 30px;
+        padding: map-get($map: $spaces, $key: m);
+        margin-top: map-get($map: $spaces, $key: m);
         
         box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .1);
         border-radius: 10%;
@@ -37,13 +38,13 @@
     }
 
     &__item-title {
-        margin-top: 30px;
+        margin-top: map-get($map: $spaces, $key: s);
         
         font-size: 18px;
     }
 
     &__item-description {
-        margin-top: 15px;
+        margin-top: map-get($map: $spaces, $key: xs);
         
         line-height: 2em;
         font-size: 13px;
