@@ -27,7 +27,7 @@
     }
 
     &__subtitle {
-        margin-top: 30px;
+        margin-top: map-get($map: $spaces, $key: s);
 
         text-align: center;
         line-height: 1.6em;
@@ -39,7 +39,7 @@
     }
 
     &__btn {
-        margin-top: 30px;
+        margin-top: map-get($map: $spaces, $key: s);
     }
 
     &::after {
@@ -49,15 +49,27 @@
         bottom: 0;
         left: 0;
 
-        height: 100px;
+        height: 75px;
         width: 100%;
 
         background: url("../images/welcome_divider.svg") no-repeat center;
+        background-size: 100% 100%;
     }
+}
 
-    @media (min-width: 1440px) {
+@media (min-height: 600px) {
+    .welcome {
+
+        &__subtitle {
+            margin-top: map-get($map: $spaces, $key: m);
+        }
+
+        &__btn {
+            margin-top: map-get($map: $spaces, $key: m);
+        }
+
         &::after {
-            background-size: 100% 100%;
+            height: 100px;
         }
     }
 }

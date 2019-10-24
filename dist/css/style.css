@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   position: fixed;
-  top: 30px;
+  top: 25px;
   right: 15px;
   left: 15px;
   z-index: 1;
@@ -26,8 +26,8 @@
   .nav__mini {
     display: flex;
     justify-content: space-between;
-    height: 80px;
-    width: calc(100% - 45px); }
+    height: 60px;
+    width: calc(100% - 2 * 25px); }
 
 .logo {
   display: flex;
@@ -102,6 +102,10 @@
     width: 100%;
     color: #3B566E; }
 
+@media (min-height: 600px) {
+  .nav__mini {
+    height: 80px; } }
+
 .welcome {
   height: 100vh;
   background: url("../images/welcome_image.jpg") center;
@@ -121,25 +125,31 @@
     font-weight: normal;
     letter-spacing: 0.06em; }
   .welcome__subtitle {
-    margin-top: 30px;
+    margin-top: 15px;
     text-align: center;
     line-height: 1.6em;
     font-size: 0.9em; }
   .welcome__strong {
     font-weight: bolder; }
   .welcome__btn {
-    margin-top: 30px; }
+    margin-top: 15px; }
   .welcome::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 100px;
+    height: 75px;
     width: 100%;
-    background: url("../images/welcome_divider.svg") no-repeat center; }
-  @media (min-width: 1440px) {
-    .welcome::after {
-      background-size: 100% 100%; } }
+    background: url("../images/welcome_divider.svg") no-repeat center;
+    background-size: 100% 100%; }
+
+@media (min-height: 600px) {
+  .welcome__subtitle {
+    margin-top: 25px; }
+  .welcome__btn {
+    margin-top: 25px; }
+  .welcome::after {
+    height: 100px; } }
 
 .features__item {
   display: flex;

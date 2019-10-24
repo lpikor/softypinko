@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: 30px;
+    top: map-get($map: $spaces, $key: m);
     right: map-get($map: $spaces, $key: s);
     left: map-get($map: $spaces, $key: s);
     z-index: 1;
@@ -18,8 +18,8 @@
         display: flex;
         justify-content: space-between;
 
-        height: 80px;
-        width: calc(100% - 45px);
+        height: 60px;
+        width: calc(100% - 2 * #{map-get($map: $spaces, $key: m)});
     }
 }
 
@@ -138,5 +138,13 @@
         width: 100%;
 
         color: #3B566E;
+    }
+}
+
+@media (min-height: 600px) {
+    .nav {
+        &__mini {
+            height: 80px;
+        }
     }
 }
