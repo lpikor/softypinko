@@ -537,20 +537,21 @@
     flex-wrap: wrap;
     max-width: 320px; }
   .footer__divider {
-    margin-top: 30px;
+    margin-top: 25px;
     width: 100%;
     border: 0.5px solid rgba(211, 211, 211, 0.3); }
   .footer__copyright {
-    margin-top: 30px;
+    margin-top: 25px;
     line-height: 1.5;
     font-size: 12px;
     letter-spacing: 0.88px;
     text-transform: uppercase; }
   .footer__design {
-    display: block; }
+    display: block;
+    margin-top: 7px; }
 
 .media__icon {
-  margin: 5px 15px;
+  margin: 7px 15px;
   font-size: 36px; }
 
 * {

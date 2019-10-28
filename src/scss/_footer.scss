@@ -22,14 +22,14 @@
     }
 
     &__divider {
-        margin-top: 30px;
+        margin-top: map-get($map: $spaces, $key: m);
         width: 100%;
 
         border: .5px solid rgba(211, 211, 211, 0.3);
     }
 
     &__copyright {
-        margin-top: 30px;
+        margin-top: map-get($map: $spaces, $key: m);
 
         line-height: 1.5;
         font-size: 12px;
@@ -39,12 +39,14 @@
 
     &__design {
         display: block;
+
+        margin-top: map-get($map: $spaces, $key: xs);
     }
 }
 
 .media {
     &__icon {
-        margin: 5px 15px;
+        margin: map-get($map: $spaces, $key: xs) map-get($map: $spaces, $key: s);
         
         font-size: 36px;
     }
