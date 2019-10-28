@@ -358,6 +358,8 @@
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1); }
+    .pricing__package:first-child {
+      margin-top: 0; }
 
 .package__container {
   margin-top: 50px; }
