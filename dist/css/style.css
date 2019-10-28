@@ -277,15 +277,15 @@
   letter-spacing: 1.75px; }
 
 .testimonials__description {
-  margin-top: 20px;
+  margin-top: 25px;
   color: #777777;
   line-height: 28px; }
 
 .testimonials__items {
   display: grid;
   grid-template-columns: 100%;
-  grid-gap: 30px;
-  margin-top: 40px; }
+  grid-gap: 25px;
+  margin-top: 50px; }
 
 .testimonials__item {
   padding: 25px;
@@ -307,7 +307,7 @@
     color: transparent; }
 
 .testimonials__content {
-  margin-top: 20px;
+  margin-top: 15px;
   color: #777777;
   line-height: 26px;
   font-size: 15px;
@@ -315,7 +315,7 @@
 
 .testimonials__attestant {
   display: flex;
-  margin-top: 20px; }
+  margin-top: 15px; }
 
 .attestant__photo {
   height: 60px;
@@ -327,7 +327,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 20px;
+  margin-left: 15px;
   width: 100%; }
 
 .attestant__name {
@@ -335,7 +335,7 @@
   font-weight: 400; }
 
 .attestant__title {
-  margin-top: 5px;
+  margin-top: 7px;
   color: #ff589e;
   font-size: 15px; }
 
