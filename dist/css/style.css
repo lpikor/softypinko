@@ -450,14 +450,14 @@
   .blog__title {
     font-size: 28px; }
   .blog__description {
-    margin-top: 20px;
+    margin-top: 25px;
     color: #777777;
     line-height: 28px;
     font-size: 15px; }
   .blog__entries {
-    margin-top: 35px; }
+    margin-top: 50px; }
   .blog__entry {
-    margin-top: 30px; }
+    margin-top: 50px; }
     .blog__entry:first-child {
       margin-top: 0; }
 
@@ -466,17 +466,17 @@
   border-radius: 20px; }
 
 .entry__title {
-  margin-top: 30px; }
+  margin-top: 15px; }
 
 .entry__description {
-  margin-top: 30px;
+  margin-top: 7px;
   color: #777;
   line-height: 26px;
   font-size: 13px; }
 
 .entry__button {
   display: inline-block;
-  margin-top: 30px; }
+  margin-top: 15px; }
 
 .contact {
   background-color: #f2f2fe; }
