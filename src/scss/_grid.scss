@@ -1,9 +1,3 @@
 .container {
     padding: map-get($map: $spaces, $key: xl) map-get($map: $spaces, $key: s);
 }
-
-.pricing {
-    &__package {
-        padding: 29px;
-    }
-}

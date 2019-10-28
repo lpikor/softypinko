@@ -1,9 +1,6 @@
 .container {
   padding: 100px 15px; }
 
-.pricing__package {
-  padding: 29px; }
-
 .nav {
   display: flex;
   flex-direction: column;
@@ -351,19 +348,19 @@
     font-size: 28px;
     letter-spacing: 1.75px; }
   .pricing__description {
-    margin-top: 20px;
+    margin-top: 25px;
     color: #777777;
     line-height: 28px;
     letter-spacing: 1px; }
   .pricing__package {
-    padding: 30px;
+    padding: 25px;
     margin-top: 50px;
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1); }
 
 .package__container {
-  margin-top: 65px; }
+  margin-top: 50px; }
 
 .package__title {
   color: #1e1e1e;
@@ -371,17 +368,17 @@
 
 .package__payment {
   display: inline-block;
-  padding: 20px;
-  margin-top: 30px;
+  padding: 25px;
+  margin-top: 25px;
   width: 100%;
   background: #8261ee;
   color: white;
   border-radius: 20px; }
 
 .package__features {
-  margin-top: 40px; }
+  margin-top: 25px; }
   .package__features__item {
-    margin-top: 12px;
+    margin-top: 15px;
     color: #7a7a7a;
     font-size: 13px; }
     .package__features__item:first-child {
@@ -391,7 +388,7 @@
 
 .package__button {
   display: inline-block;
-  margin-top: 50px; }
+  margin-top: 25px; }
 
 .package--premium > .package__payment {
   background: #ff589e; }

@@ -16,7 +16,7 @@
     }
 
     &__description {
-        margin-top: 20px;
+        margin-top: map-get($map: $spaces, $key: m);
 
         color: #777777;
 
@@ -25,7 +25,7 @@
     }
 
     &__package {    
-        padding: 30px;
+        padding: map-get($map: $spaces, $key: m);
         margin-top: 50px;
 
         background: #fff;   
@@ -36,7 +36,7 @@
 
 .package {
     &__container {
-        margin-top: 65px;
+        margin-top: map-get($map: $spaces, $key: l);
     }
 
     &__title {
@@ -48,8 +48,8 @@
     &__payment {
         display: inline-block;
 
-        padding: 20px;
-        margin-top: 30px;
+        padding: map-get($map: $spaces, $key: m);
+        margin-top: map-get($map: $spaces, $key: m);
         width: 100%;
 
         background: map-get($map: $colors, $key: primary);
@@ -58,10 +58,10 @@
     }
 
     &__features {
-        margin-top: 40px;
+        margin-top: map-get($map: $spaces, $key: m);
 
         &__item {
-            margin-top: 12px;
+            margin-top: map-get($map: $spaces, $key: s);
 
             color: #7a7a7a;
 
@@ -80,7 +80,7 @@
     &__button {
         display: inline-block;
 
-        margin-top: 50px;
+        margin-top: map-get($map: $spaces, $key: m);
     }
 
     &--premium {
