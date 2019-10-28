@@ -369,7 +369,8 @@
   font-size: 17px; }
 
 .package__payment {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   padding: 25px;
   margin-top: 25px;
   width: 100%;
@@ -401,10 +402,15 @@
 .package--advanced .package__features__item {
   text-decoration: none; }
 
+.payment__charging {
+  display: flex;
+  justify-content: center; }
+
 .payment__currency {
   font-size: 32px; }
 
 .payment__value {
+  margin-left: 7px;
   font-size: 28px; }
 
 .payment__frequency {

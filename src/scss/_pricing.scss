@@ -50,7 +50,8 @@
     }
 
     &__payment {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
 
         padding: map-get($map: $spaces, $key: m);
         margin-top: map-get($map: $spaces, $key: m);
@@ -105,18 +106,26 @@
 }
 
 .payment {
+
+    &__charging {
+        display: flex;
+        justify-content: center;
+    }
+
     &__currency {
         font-size: 32px;
     }
 
     &__value {
+        margin-left: map-get($map: $spaces, $key: xs);
+
         font-size: 28px;
     }
 
     &__frequency {
         display: block;
 
-        margin-top: 7px;
+        margin-top: map-get($map: $spaces, $key: xs);
         
         font-size: 14px;
         letter-spacing: 0.88px;
