@@ -202,7 +202,9 @@
       -webkit-background-clip: text;
       color: transparent; }
       .about__icon-container-2 {
-        margin-top: 30px; }
+        margin-top: 25px; }
+  .about__item-2 {
+    margin-top: 50px; }
   .about__item-title {
     display: block;
     line-height: 42px;
@@ -210,16 +212,14 @@
     font-weight: bolder;
     letter-spacing: 0.03em; }
     .about__item-title-1 {
-      margin-top: 30px; }
-    .about__item-title-2 {
-      margin-top: 100px; }
+      margin-top: 25px; }
   .about__item-description {
-    margin-top: 30px;
+    margin-top: 15px;
     color: #777777;
     line-height: 28px;
     letter-spacing: 0.06em; }
   .about__divider {
-    margin-top: 116px; }
+    margin-top: 50px; }
 
 .work-process {
   background: url("../images/work-process_image.jpg") center;

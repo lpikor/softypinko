@@ -20,37 +20,41 @@
             color: transparent;
 
             &-2 {
-                margin-top: 30px;
+                margin-top: map-get($map: $spaces, $key: m);
             }
         }
     }
 
-    &__item-title {
-        display: block;
+    &__item {
 
-        line-height: 42px;
-        font-size: 1.5rem;
-        font-weight: bolder;
-        letter-spacing: 0.03em;
-
-        &-1 {
-            margin-top: 30px;
-        }
         &-2 {
-            margin-top: 100px;
+            margin-top: map-get($map: $spaces, $key: l);
         }
-    }
 
-    &__item-description {
-        margin-top: 30px;
-        
-        color: #777777;
+        &-title {
+            display: block;
+    
+            line-height: 42px;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            letter-spacing: 0.03em;
+    
+            &-1 {
+                margin-top: map-get($map: $spaces, $key: m);
+            }
+        }
 
-        line-height: 28px;
-        letter-spacing: 0.06em;
+        &-description {
+            margin-top: map-get($map: $spaces, $key: s);
+            
+            color: #777777;
+    
+            line-height: 28px;
+            letter-spacing: 0.06em;
+        }
     }
 
     &__divider {
-        margin-top: 116px;
+        margin-top: map-get($map: $spaces, $key: l);
     }
 }
