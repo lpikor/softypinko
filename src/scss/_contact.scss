@@ -13,7 +13,7 @@
     }
 
     &__description {
-        margin-top: 20px;
+        margin-top: map-get($map: $spaces, $key: m);
         
         color: #777;
 
@@ -23,7 +23,7 @@
     }
 
     &__form {
-        margin-top: 30px;
+        margin-top: map-get($map: $spaces, $key: l);
         width: 100%;
 
         text-align: left;
@@ -32,22 +32,25 @@
 
 .form {
     * {
-        margin-top: 25px;
+        margin-top: map-get($map: $spaces, $key: m);
 
         border: none;
         border-radius: 30px;
         outline: none;
+
+        &:first-child {
+            margin-top: 0;
+        }
     }
 
     &__inputs {
         display: flex;
         flex-direction: column;
 
-        margin: 0;
         width: 100%;
         
         * {
-            padding: 16px 25px;
+            padding: map-get($map: $spaces, $key: s) map-get($map: $spaces, $key: m);
             
             color: #212529;
 
