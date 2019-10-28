@@ -6,7 +6,7 @@
         align-items: center;
 
         padding: map-get($map: $spaces, $key: m);
-        margin-top: map-get($map: $spaces, $key: m);
+        margin-top: map-get($map: $spaces, $key: l);
         
         box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .1);
         border-radius: 10%;

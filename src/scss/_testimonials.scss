@@ -21,18 +21,19 @@
     }
 
     &__items {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-gap: map-get($map: $spaces, $key: m);
-
         margin-top: map-get($map: $spaces, $key: l);
     }
 
     &__item {
         padding: map-get($map: $spaces, $key: m);
+        margin-top: map-get($map: $spaces, $key: l);
         
         border-radius: 20px;
         box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .1);
+
+        &:first-child {
+            margin-top: 0;
+        }
     }
 
     &__icon {
