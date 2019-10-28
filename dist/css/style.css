@@ -1,12 +1,6 @@
 .container {
   padding: 100px 15px; }
 
-.features__item {
-  padding: 30px; }
-
-.work-process__item {
-  padding: 20px; }
-
 .pricing__package {
   padding: 29px; }
 
@@ -234,26 +228,27 @@
     font-size: 28px;
     letter-spacing: 0.06em; }
   .work-process__description {
-    margin-top: 30px;
+    margin-top: 25px;
     line-height: 1.6em;
     font-size: 15px; }
   .work-process__items {
     display: grid;
     grid-template-columns: 45% 45%;
-    grid-gap: 30px;
-    margin-top: 40px; }
+    grid-gap: 25px;
+    margin-top: 50px; }
   .work-process__item {
     display: flex;
     flex-direction: column;
+    padding: 15px;
     background: #ffffff;
     box-shadow: 10px 10px 0 rgba(175, 146, 226, 0.58);
     border-radius: 20px; }
     .work-process__item-title {
-      margin-top: 20px;
+      margin-top: 15px;
       color: #2e2e2e;
       font-size: 17px; }
     .work-process__item-description {
-      margin-top: 5px;
+      margin-top: 7px;
       color: #777777;
       line-height: 1.5em;
       font-size: 14px; }

@@ -17,7 +17,7 @@
     }
 
     &__description {
-        margin-top: 30px;
+        margin-top: map-get($map: $spaces, $key: m);
 
         line-height: 1.6em;
         font-size: 15px;
@@ -26,28 +26,31 @@
     &__items {
         display: grid;
         grid-template-columns: 45% 45%;
-        grid-gap: 30px;
+        grid-gap: map-get($map: $spaces, $key: m);
         
-        margin-top: 40px;
+        margin-top: map-get($map: $spaces, $key: l);
     }
 
     &__item {
         display: flex;
         flex-direction: column;
 
+        padding: map-get($map: $spaces, $key: s);
+
         background: map-get($colors, white);
         box-shadow: 10px 10px 0 rgba(175, 146, 226, 0.58);
         border-radius: 20px;
 
         &-title {
-            margin-top: 20px;
+            margin-top: map-get($map: $spaces, $key: s);
             
             color: map-get($text-colors, black);
             
             font-size: 17px;
         }
+
         &-description {
-            margin-top: 5px;
+            margin-top: map-get($map: $spaces, $key: xs);
             
             color: map-get($text-colors, grey);
 

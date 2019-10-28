@@ -2,18 +2,6 @@
     padding: map-get($map: $spaces, $key: xl) map-get($map: $spaces, $key: s);
 }
 
-.features {
-    &__item {
-        padding: 30px;
-    }
-}
-
-.work-process {
-    &__item {
-        padding: 20px;
-    }
-}
-
 .pricing {
     &__package {
         padding: 29px;
