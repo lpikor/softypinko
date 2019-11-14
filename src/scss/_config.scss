@@ -21,5 +21,8 @@ $spaces: (
     xl: 100px
 );
 
-$hamburger-animation-time: .5s;
 $gradient-background: linear-gradient(135deg, map-get($colors, gradient-left), map-get($colors, gradient-right));
+
+$hamburger-animation-time: .5s;
+
+$max-width: calc(100vw - 2 * #{map-get($map: $spaces, $key: s)});
