@@ -1,3 +1,7 @@
+.section {
+  display: flex;
+  justify-content: center; }
+
 .container {
   padding: 100px 0;
   max-width: calc(100vw - 2 * 15px); }
@@ -99,17 +103,25 @@
     height: 80px; } }
 
 .welcome {
+  position: relative;
   height: 100vh;
   background: url("../images/welcome_image.jpg") center;
   color: white; }
   .welcome__container {
+    z-index: 1; }
+  .welcome::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(167, 89, 209, 0.95), rgba(130, 97, 238, 0.95)); }
+  .welcome__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(167, 89, 209, 0.95), rgba(130, 97, 238, 0.95)); }
+    justify-content: center; }
   .welcome__title {
     text-align: center;
     font-weight: normal;
@@ -221,14 +233,24 @@
     margin-top: 50px; }
 
 .work-process {
+  position: relative;
   background: url("../images/work-process_image.jpg") center;
   color: white; }
+  .work-process__container {
+    z-index: 1; }
+  .work-process::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(167, 89, 209, 0.95), rgba(130, 97, 238, 0.95)); }
   .work-process__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    background: linear-gradient(135deg, rgba(167, 89, 209, 0.95), rgba(130, 97, 238, 0.95)); }
+    text-align: center; }
   .work-process__title {
     font-size: 28px;
     letter-spacing: 0.06em; }
@@ -428,13 +450,23 @@
   letter-spacing: 0.88px; }
 
 .statistics {
+  position: relative;
   color: white;
   background: url("../images/statistics_image.jpg") center; }
   .statistics__container {
+    z-index: 1; }
+  .statistics::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(167, 89, 209, 0.95), rgba(130, 97, 238, 0.95)); }
+  .statistics__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: linear-gradient(135deg, rgba(167, 89, 209, 0.95), rgba(130, 97, 238, 0.95)); }
+    align-items: center; }
   .statistics__item {
     display: flex;
     flex-direction: column;

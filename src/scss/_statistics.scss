@@ -1,4 +1,6 @@
 .statistics {
+    @include background-overlay;
+
     color: white;
     background: url("../images/statistics_image.jpg") center;
 
@@ -6,8 +8,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        background: $gradient-background;
     }
 
     &__item {

@@ -1,4 +1,6 @@
 .work-process {
+    @include background-overlay;
+
     background: url("../images/work-process_image.jpg") center;
     color: white;
 
@@ -7,8 +9,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-
-        background: $gradient-background;
     }
 
     &__title {
