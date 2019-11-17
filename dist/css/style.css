@@ -271,7 +271,7 @@
     font-size: 15px; }
   .work-process__items {
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
     margin-top: 50px; }
   .work-process__item {
@@ -303,6 +303,9 @@
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent; }
+  @media (min-width: 768px) {
+    .work-process__items {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
 
 .testimonials__container {
   display: flex;

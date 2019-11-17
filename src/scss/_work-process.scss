@@ -25,7 +25,7 @@
 
     &__items {
         display: grid;
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 1fr 1fr;
         grid-gap: map-get($map: $spaces, $key: m);
         
         margin-top: map-get($map: $spaces, $key: l);
@@ -75,6 +75,12 @@
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        &__items {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
     }
 }
