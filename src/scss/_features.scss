@@ -1,4 +1,9 @@
 .features {
+
+    &__items {
+        display: grid;
+        grid-gap: map-get($map: $spaces, $key: m);
+    }
     
     &__item {
         display: flex;
@@ -6,10 +11,9 @@
         align-items: center;
 
         padding: map-get($map: $spaces, $key: m);
-        margin-top: map-get($map: $spaces, $key: l);
         
         box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .1);
-        border-radius: 10%;
+        border-radius: 20px;
 
         text-align: center;
         letter-spacing: 0.03em;
@@ -48,5 +52,11 @@
         
         line-height: 2em;
         font-size: 13px;
+    }
+
+    @media (min-width: 768px) {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }

@@ -174,14 +174,17 @@
   .welcome::after {
     height: 100px; } }
 
+.features__items {
+  display: grid;
+  grid-gap: 25px; }
+
 .features__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 25px;
-  margin-top: 50px;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 10%;
+  border-radius: 20px;
   text-align: center;
   letter-spacing: 0.03em; }
   .features__item:first-child {
@@ -207,6 +210,10 @@
   margin-top: 7px;
   line-height: 2em;
   font-size: 13px; }
+
+@media (min-width: 768px) {
+  .features__items {
+    grid-template-columns: 1fr 1fr; } }
 
 .about {
   display: flex; }
