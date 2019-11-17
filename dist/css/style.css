@@ -209,8 +209,7 @@
   font-size: 13px; }
 
 .about {
-  display: flex;
-  flex-direction: column; }
+  display: flex; }
   .about__icon {
     font-size: 220px; }
     .about__icon-container {
