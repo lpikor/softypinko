@@ -4,8 +4,8 @@
     align-items: center;
     position: fixed;
     top: map-get($map: $spaces, $key: m);
-    right: map-get($map: $spaces, $key: s);
-    left: map-get($map: $spaces, $key: s);
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1;
 
     text-align: center;
