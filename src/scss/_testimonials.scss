@@ -21,12 +21,14 @@
     }
 
     &__items {
+        display: grid;
+        grid-gap: map-get($map: $spaces, $key: m);
+
         margin-top: map-get($map: $spaces, $key: l);
     }
 
     &__item {
         padding: map-get($map: $spaces, $key: m);
-        margin-top: map-get($map: $spaces, $key: l);
         
         border-radius: 20px;
         box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .1);
@@ -69,6 +71,12 @@
         display: flex;
 
         margin-top: map-get($map: $spaces, $key: s);
+    }
+
+    @media (min-width: 768px) {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
 

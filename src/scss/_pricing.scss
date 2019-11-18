@@ -24,9 +24,15 @@
         letter-spacing: 1px;
     }
 
-    &__package {    
+    &__items {
+        display: grid;
+        grid-gap: map-get($map: $spaces, $key: m);
+
+        margin-top: map-get($map: $spaces, $key: l);
+    }
+
+    &__item {    
         padding: map-get($map: $spaces, $key: m);
-        margin-top: 50px;
 
         background: #fff;   
         border-radius: 20px;
@@ -36,13 +42,15 @@
             margin-top: 0;
         }
     }
+
+    @media (min-width: 768px) {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }
 
 .package {
-    &__container {
-        margin-top: map-get($map: $spaces, $key: l);
-    }
-
     &__title {
         color: #1e1e1e;
 
