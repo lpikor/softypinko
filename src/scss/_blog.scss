@@ -21,15 +21,16 @@
         font-size: 15px;
     }
 
-    &__entries {
+    &__items {
+        display: grid;
+        grid-gap: map-get($map: $spaces, $key: m);
+
         margin-top: map-get($map: $spaces, $key: l);
     }
 
-    &__entry {
-        margin-top: map-get($map: $spaces, $key: l);
-
-        &:first-child {
-            margin-top: 0;
+    @media (min-width: 768px) {
+        &__items {
+            grid-template-columns: 1fr 1fr;
         }
     }
 }

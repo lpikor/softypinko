@@ -523,12 +523,13 @@
     color: #777777;
     line-height: 28px;
     font-size: 15px; }
-  .blog__entries {
+  .blog__items {
+    display: grid;
+    grid-gap: 25px;
     margin-top: 50px; }
-  .blog__entry {
-    margin-top: 50px; }
-    .blog__entry:first-child {
-      margin-top: 0; }
+  @media (min-width: 768px) {
+    .blog__items {
+      grid-template-columns: 1fr 1fr; } }
 
 .entry__photo {
   max-width: 100%;
