@@ -32,7 +32,7 @@
 
 .form {
     * {
-        margin-top: map-get($map: $spaces, $key: m);
+        margin-top: map-get($map: $spaces, $key: s);
 
         border: none;
         border-radius: 30px;
@@ -64,6 +64,8 @@
     }
 
     &__submit {
+        margin-top: map-get($map: $spaces, $key: m);
+
         font-size: 13px;
     }
 }

@@ -569,7 +569,7 @@
     text-align: left; }
 
 .form * {
-  margin-top: 25px;
+  margin-top: 15px;
   border: none;
   border-radius: 30px;
   outline: none; }
@@ -589,6 +589,7 @@
       margin-top: 0; }
 
 .form__submit {
+  margin-top: 25px;
   font-size: 13px; }
 
 .footer {
