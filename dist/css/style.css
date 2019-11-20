@@ -569,7 +569,6 @@
     text-align: left; }
 
 .form * {
-  margin-top: 15px;
   border: none;
   border-radius: 30px;
   outline: none; }
@@ -577,8 +576,8 @@
     margin-top: 0; }
 
 .form__inputs {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-gap: 15px;
   width: 100%; }
   .form__inputs * {
     padding: 15px 25px;
@@ -591,6 +590,12 @@
 .form__submit {
   margin-top: 25px;
   font-size: 13px; }
+
+@media (min-width: 768px) {
+  .form__inputs {
+    grid-template-columns: 1fr 1fr; }
+  .form__textarea {
+    grid-column: 1 / 3; } }
 
 .footer {
   background: linear-gradient(135deg, rgba(167, 89, 209, 0.95), rgba(130, 97, 238, 0.95)); }

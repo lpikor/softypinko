@@ -32,8 +32,6 @@
 
 .form {
     * {
-        margin-top: map-get($map: $spaces, $key: s);
-
         border: none;
         border-radius: 30px;
         outline: none;
@@ -44,8 +42,8 @@
     }
 
     &__inputs {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-gap: map-get($map: $spaces, $key: s);
 
         width: 100%;
         
@@ -67,5 +65,15 @@
         margin-top: map-get($map: $spaces, $key: m);
 
         font-size: 13px;
+    }
+
+    @media (min-width: 768px) {
+        &__inputs {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__textarea {
+            grid-column: 1 / 3
+        }
     }
 }
