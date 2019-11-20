@@ -61,6 +61,10 @@
         }
     }
 
+    &__textarea {
+        resize: vertical;
+    }
+
     &__submit {
         margin-top: map-get($map: $spaces, $key: m);
 

@@ -587,6 +587,9 @@
     .form__inputs *:first-child {
       margin-top: 0; }
 
+.form__textarea {
+  resize: vertical; }
+
 .form__submit {
   margin-top: 25px;
   font-size: 13px; }
