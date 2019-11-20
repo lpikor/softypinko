@@ -4,12 +4,10 @@
     &__container {
         display: flex;
         flex-direction: column;
-        flex-basis: 100%;
         align-items: center;
         text-align: center;
 
-        padding-top: map-get($map: $spaces, $key: s);
-        padding-bottom: map-get($map: $spaces, $key: s);
+        padding: map-get($map: $spaces, $key: m) 0;
         
         color: white;
     }
@@ -42,6 +40,16 @@
         display: block;
 
         margin-top: map-get($map: $spaces, $key: xs);
+    }
+
+    @media (min-width: 768px) {
+        &__design {
+            display: inline;
+
+            &::before {
+                content: " - ";
+            }
+        }
     }
 }
 

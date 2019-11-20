@@ -605,11 +605,9 @@
   .footer__container {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
     align-items: center;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 25px 0;
     color: white; }
   .footer__media {
     display: flex;
@@ -629,6 +627,11 @@
   .footer__design {
     display: block;
     margin-top: 7px; }
+  @media (min-width: 768px) {
+    .footer__design {
+      display: inline; }
+      .footer__design::before {
+        content: " - "; } }
 
 .media__icon {
   margin: 7px 15px;
